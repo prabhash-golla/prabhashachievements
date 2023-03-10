@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Rampart+One&family=Smokum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Achievements</title>
 </head>
 <style>
@@ -48,15 +50,80 @@
         border-color: rgb(245, 245, 245);
         border-style: double;
     }
+    .menucss{
+        font-weight: 900;
+        line-height: 4vh;
+        text-align: right;
+        display: inline-flex;
+        list-style: none;
+        margin-top: -10vh;
+        margin-left: 90%;
+    }
+    .menucss a{
+        text-decoration: none;
+        color: white;
+        font-size: 3vh;
+        margin: 15px;
+    }
+    .menucss ul li:hover .hidecss{
+        display: block;
+        position: absolute;
+        background-color: black;
+        margin-top: 15px;
+        margin-left: -500%;
+    }
+    .menucss ul li:hover .hidecss ul
+    {
+        display: block;
+        margin: 10px;
+        list-style: none;
+    }
+    .menucss ul li:hover .hidecss ul li
+    {
+        width: 300px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        background:transparent;
+        border-radius: 0ch; 
+    }
+    .menucss ul li:hover .hidecss ul li:last-child
+    {
+        border-bottom: none;
+    }
+    .menucss .fa{
+        margin-right: 0px;
+    }
+    .hidecss{
+        display: none;
+    }
+    @media only screen and (max-width: 700px){
+        #textcss{
+            font-size: 4vh;
+            width: 50%;
+        }
+        .menucss{
+            margin-left: 75%;
+        }
+        .menucss ul li:hover .hidecss{
+            margin-left: -400%
+        }
+        .hidecss ul li a{
+            font-family:'Josefin sans',sans-serif;
+            font-weight: 900;
+        }
+    }
 
 </style>
 <body>
-    <br><br>
-    <div style="font-size: 6vh;font-weight: 500;text-align: right;">
-    <a href="index.html"  style="color: rgb(0, 234, 255);font-size: 3vh;">Home</a>
-    <a href="project.html"  style="color: rgb(0, 234, 255);font-size: 3vh;">My_Achievements</a>
-    <a href="aboutme.html"  style="color: rgb(245, 245, 245);font-size: 3vh;" id="aboutcss">About_Me</a>
-    <a href="contact.html"  style="color: rgb(0, 234, 255);font-size: 3vh;">Contact</a>
+    <div class="menucss">
+        <ul><li style="position: fixed;background-color: black;height: 50px;"><center><a class="icon"><i class="fa fa-bars" style="color: #fff;"></i></a></center>
+        <div class="hidecss" style="font-family:'Josefin sans',sans-serif;">
+        <ul>
+        <li><a href="index.html" ><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="project.html" ><i class="fa fa-trophy"></i>My_Achievements</a></li>
+        <li><a href="aboutme.html" ><i class="fa fa-user"></i>About_Me</a></li>
+        <li><a href="contact.html" ><i class="fa fa-phone"></i>Contact</a></li>
+        </div></li></ul>
     </div>
     <br><center><h1 id="textcss"><b>About Me</b></h1></center>
     <ul type="rombus" style="color: rgb(0, 234, 255);font-size: 5.4vh;font-weight: 500;margin-left: 5%;;letter-spacing: 2px;line-height: 80px;margin-right: 5%;"> 

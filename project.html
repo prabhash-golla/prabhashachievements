@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@300&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Achievements</title>
 </head>
 <style>
@@ -15,10 +16,6 @@
         background-image: url('projectbackground.png');
         background-size: 100% 100vh;
         padding: 20px;
-        border-color: brown;
-        border-width: 15px;
-        border-style: groove;
-        border-radius: 40px;
         font-family: 'Kalam', cursive;
         background-attachment: fixed;
     }
@@ -27,17 +24,23 @@
         border-color: blue;
         border-style: groove;
         border-width: 10px;
-        border-radius: 60px;    
+        border-radius: 60px;
+        height: 100px;    
         cursor: pointer;
     }
+    #isi{
+        color: rgb(3, 81, 148);
+        font-size: 6vh;   
+    }
     #textcss{
-        font-size: 5vh;
+        font-size: 8vh;
         color: black;
         background-color: rgb(14, 189, 189);
         border-color: blue;
         border-style: groove;
+        width:500px;
         border-radius: 60px;
-        border-width: 20px;
+        border-width: 10px;
         padding: 10px;
         font-family:'Josefin sans',sans-serif
     }
@@ -82,37 +85,89 @@
     1px 25px 35px rgb(254, 254, 252),
     1px 30px 60px rgb(254, 254, 254);
     }
-    /* #topcss{
-        position: fixed;
-        border: 10px;
-        background-color: white;
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPRqpSj68m1lTCAv0iMCpWbBvyhk6WNw2HslI8T4wdV3F5_s5myhI45BRIc7jPuAtZjYw&usqp=CAU');
-        background-repeat: no-repeat;
-        background-size: 50px 50px;
-        height: 50px;
-        border-style: groove;
-        border-color: brown;
-        border-radius: 50px 0% 0% 50px;
-        margin-left: 100%;
-        margin-top: 90vh;
-        transform: translate(-100%,-100%);
-        overflow-x: hidden;
-        padding: 0px 50px 0px 20px;
-    } */
+    .menucss{
+        font-weight: 900;
+        font-family:'Josefin sans',sans-serif;
+        line-height: 4vh;
+        text-align: right;
+        display: inline-flex;
+        list-style: none;
+        margin-top: -10vh;
+        margin-left: 90%;
+    }
+    .menucss a{
+        text-decoration: none;
+        color: white;
+        font-size: 3vh;
+        margin: 15px;
+    }
+    .menucss ul li:hover .hidecss{
+        display: block;
+        position: absolute;
+        background-color: black;
+        margin-top: 15px;
+        margin-left: -600%;
+    }
+    .menucss ul li:hover .hidecss ul
+    {
+        display: block;
+        margin: 10px;
+        list-style: none;
+    }
+    .menucss ul li:hover .hidecss ul li
+    {
+        width: 300px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        background:transparent;
+        border-radius: 0ch; 
+    }
+    .menucss ul li:hover .hidecss ul li:last-child
+    {
+        border-bottom: none;
+    }
+    .menucss .fa{
+        margin-right: 0px;
+    }
+    .hidecss{
+        display: none;
+    }
+    #main{
+        color: yellow;
+        font-size: 6vh; 
+        font-weight: 900;
+        line-height: 7vh;
+    }
+    @media only screen and (max-width: 600px){
+        #main{
+            font-size: 30px;
+            margin: 0;
+        }
+        #textcss{
+            font-size: 4vh;
+            width: 75%;
+        }
+        #isi{
+            font-size: 30px;
+        }
+        .menucss{
+            margin-left: 77%;
+        }
+    }
 </style>
-<body id="top">
-    <!-- <div id="topcss"><a href="#top" style="color: transparent;text-shadow: none;">p</a></div>   -->
-    <br>
-    <div style="font-weight: 900;font-family:'Josefin sans',sans-serif;text-align: right;line-height: 4vh;">
-    <a href="index.html"  style="color: yellow;font-size: 3vh;">Home</a>
-    &#160;&#160;&#160;&#160;
-    <a href="project.html"  style="color: whitesmoke;font-size: 3vh;">My_Achievements</a>
-    &#160;&#160;&#160;&#160;
-    <a href="aboutme.html"  style="color: yellow;font-size: 3vh;">About_Me</a>
-    &#160;&#160;&#160;&#160;
-    <a href="contact.html"  style="color: yellow;font-size: 3vh;">Contact</a>
-    </div><center><h1 id="textcss"><b>My Achievements</b></h1></center>
-    <def style="color: yellow; font-size: 6vh; font-weight: 900;line-height: 7vh;"><ul> 
+<body>
+    <div class="menucss">
+        <ul><li style="position: fixed;background-color: black;height: 50px;"><center><a class="icon"><i class="fa fa-bars"></i></a></center>
+        <div class="hidecss">
+        <ul>
+        <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="project.html"><i class="fa fa-trophy"></i>My_Achievements</a></li>
+        <li><a href="aboutme.html"><i class="fa fa-user"></i>About_Me</a></li>
+        <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+        </div></li></ul>
+    </div>
+    <center><h1 id="textcss"><b>My Achievements</b></h1></center>
+    <def id="main"><ul> 
             <li>In the Intermediate 2<sup>nd</sup> year,I had achieved the following:-</li>
             <br><ul type="square" style="font-family:'Josefin sans',sans-serif">
                 <li style="font-family: 'Dancing Script', cursive;font-weight: 100;">In Andra Pradesh EAPCET</li><br>
@@ -154,9 +209,9 @@
                 <i>Had given ISI Kolkata exam.<br><br>
                 Had got selected for the interview.<br><br>
                 Had given the Interview and got overall 27<sup>th</sup> Rank in CRL and 2<sup>nd</sup> Rank in EWS.<br></i></ul>
-                <button id="isicss"> <a href="https://www.instagram.com/p/CiVUnKOhOoO/?utm_source=ig_web_copy_link" target="_blank" title="click to visit instagram post"><h1 style="color: rgb(3, 81, 148);font-size: 50px;">
-                    Photos at ISI 
-                </h1></a></button><ul type="square" style="font-family:'Josefin sans',sans-serif">
+                <button id="isicss"><a href="https://www.instagram.com/p/CiVUnKOhOoO/?utm_source=ig_web_copy_link" target="_blank" title="click to visit instagram post" id="isi">
+                    Photos at ISI
+                </a></button><ul type="square" style="font-family:'Josefin sans',sans-serif">
                 <li style="font-family: 'Dancing Script', cursive;font-weight: 100;">In JEE Advanced</li>
                 <i><br>CRL Rank : 844;
                 <br><br>EWS Rank : 83.</i>
