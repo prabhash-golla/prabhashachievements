@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
     <style>
         *{font-family: 'Oswald', sans-serif;}
@@ -52,11 +53,14 @@
     .fa-phone{
         background: white;
     }
+    .fa-home{
+        font-size: 25px;
+    }
     .menucss{
         font-weight: 900;
         font-family:'Josefin sans',sans-serif;
-        line-height: 4vh;
         text-align: right;
+        line-height: 4vh;
         display: inline-flex;
         list-style: none;
         margin-top: -10vh;
@@ -75,6 +79,9 @@
         margin-top: -15px;
         margin-left: -270%;
     }
+    #shadowcss ul li a{
+        font-family:'Josefin sans',sans-serif;
+    }
     .menucss ul li:hover #shadowcss ul
     {
         display: block;
@@ -83,11 +90,15 @@
     }
     .menucss ul li:hover #shadowcss ul li
     {
+        font-size: 70px;
         width: 300px;
         padding: 10px;
         border-bottom: 1px dotted #fff;
         background:transparent;
         border-radius: 0ch; 
+    }
+    li{
+        height: 45px;
     }
     .menucss ul li:hover #shadowcss ul li:last-child
     {
@@ -97,21 +108,9 @@
         margin-right: 0px;
     }
     #shadowcss{
-        text-shadow: 1px 1px 1px #919191,
-        1px 2px 1px #919191,
-        1px 3px 1px #919191,
-        1px 4px 1px #919191,
-        1px 5px 1px #919191,
-        1px 6px 1px #919191,
-        1px 7px 1px #919191,
-        1px 8px 1px #919191,
-        1px 9px 1px #919191,
-        1px 10px 1px #919191,
-    1px 18px 6px rgba(16,16,16,0.4),
-    1px 22px 10px rgba(16,16,16,0.2),
-    1px 25px 35px rgba(16,16,16,0.2),
-    1px 30px 60px rgba(16,16,16,0.4);
-       display: none;
+        font-family:'Josefin sans',sans-serif;
+        font-weight: 900;
+        display: none;
     }
     #shadowcss a{
         text-decoration: none;
@@ -134,10 +133,10 @@
         <ul><li style="position: fixed;background-color:black;height: 70px;"><center><a class="icon"><i class="fa fa-bars" style="color: white;"></i></a></center>
         <div id="shadowcss">
         <ul>
-        <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="project.html"><i class="fa fa-trophy"></i>My_Achievements</a></li>
-        <li><a href="aboutme.html"><i class="fa fa-user"></i>About_Me</a></li>
-        <li><a href="contact.html"><i class="fa fa-phone" style="background-color: black;"></i>Contact</a></li>
+        <li><a href="index.html" style="font-size: 19px;line-height: 20px;"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="project.html" style="font-size: 19px;line-height: 20px;"><i class="fa fa-trophy"></i> My_Achievements</a></li>
+        <li><a href="aboutme.html" style="font-size: 19px;line-height:20px;"><i class="fa fa-user"></i> About_Me</a></li>
+        <li><a href="contact.html" style="font-size: 19px;line-height: 20px;"><i class="fa fa-phone" style="background-color: transparent;"></i> Contact</a></li>
         </div></li></ul>
     </div>
     <center>
