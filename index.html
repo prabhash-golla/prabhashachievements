@@ -1,83 +1,526 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WELCOME</title>
-    <style>
-        body {
-            background-image: url('https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg.jpg');
-            background-size: 100% 100vh;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        p {
-            line-height: 50px;
-        }
-        h1{
-            line-height: 50px;
-        }
-        button {
-            color:white;
-        display: inline-block;
-        background-color: rgb(109, 111, 112);
-        border-radius: 10px;
-        border: 4px double #dcdcdc;
-        text-align: center;
-        font-size: 28px;
-        padding: 15px;
-        width: 200px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-       }
-      button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-      }
-      button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-      }
-      button:hover {
-        background-color: rgb(220,233,238);
-        color: black;
-      }
-      button:hover span {
-        padding-right: 25px;
-      }
-      button:hover span:after {
-        opacity: 1;
-        right: 0;
-      }
-      h1:hover + button {
-      display: button;
-     }
-     #textcss{
-        text-decoration: none;
-        color: white;
-        width: 100%;
-        height: 100%;
-     }
-     #textcss:hover{
-        color: rgb(109, 111, 112);
-     }
-    </style>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prabhash Golla — CS Engineer | IIT Kharagpur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-  <body> 
-    <br><br><center>
-    <h1 style="font-size: 8vh;line-height: 10vh;color: rgb(220, 233, 238);">WELCOME</h1>
-    <p style="font-family: 'Times New Roman', Times, serif;color: rgb(220, 233, 238);font-size: 9vh;line-height: 10vh;">To</p>
-    <h1 style="font-family: 'copperplate';font-size: 9vh;color: rgb(208, 219, 223);line-height: 10vh;"><em>My Portfolio Website</em></h1>
-    <br><button><span><a href="project.html" id="textcss" title="click here to visit my Achievements">Click here</a></span></button> 
-    </center>
-  </body>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="mouse-spotlight" id="mouseSpotlight"></div>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Prabhash<span> / Golla</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#competitive">CP</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:prabhashgolla2004@gmail.com" class="nav-cta magnetic-btn">Get In Touch</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-orb"></div>
+  <div class="hero-orb2"></div>
+  <p class="hero-eyebrow">IIT Kharagpur &nbsp;·&nbsp; Computer Science &amp; Engineering &nbsp;·&nbsp; Dual Degree</p>
+  <h2 class="hero-name">
+    Golla<br>
+    <span class="hl">Meghanandh Manvith</span><br>
+    <span class="hp">Prabhash</span>
+  </h2>
+  <p class="hero-desc">
+    Building distributed systems, deep learning models, and full-stack applications.
+    Expert-rated competitive programmer — <strong>Codeforces 1892</strong> and
+    <strong>LeetCode Guardian (2263)</strong>.
+  </p>
+  <div class="hero-actions">
+    <a href="https://github.com/prabhash-golla" target="_blank" class="btn-primary magnetic-btn"><span>↗ GitHub</span></a>
+    <a href="https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/" target="_blank" class="btn-ghost magnetic-btn">LinkedIn</a>
+    <a href="#projects" class="btn-ghost magnetic-btn">View Projects</a>
+  </div>
+  </section>
+
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">About</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        I'm a prefinal-year <strong>Dual Degree (B.Tech + M.Tech)</strong> student at IIT Kharagpur,
+        specializing in Computer Science and Engineering. My work spans distributed systems,
+        deep learning, networking, and full-stack development.
+      </p>
+      <p>
+        From designing fault-tolerant distributed databases to building transformer-based image captioning
+        systems, I enjoy working at the intersection of <strong>systems engineering and machine intelligence</strong>.
+      </p>
+      <p>
+        Outside academics, I am an <strong>Expert on Codeforces</strong> and <strong>Guardian on LeetCode</strong>,
+        Tech Head at KodeinKGP — IIT Kharagpur's largest coding community — and a silver medalist in
+        IIT Kharagpur's General Championship across football, yoga, and product management.
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/prabhash-golla" target="_blank" class="social-link magnetic-btn">⌥ GitHub</a>
+        <a href="https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/" target="_blank" class="social-link magnetic-btn">⊞ LinkedIn</a>
+        <a href="https://leetcode.com/chinnu0312" target="_blank" class="social-link magnetic-btn">◈ LeetCode</a>
+      </div>
+    </div>
+    <div class="about-details reveal d2">
+      <div class="detail-group">
+        <h4>Location</h4>
+        <p>IIT Kharagpur, West Bengal, India</p>
+        <p>Home: Andhra Pradesh</p>
+      </div>
+      <div class="detail-group">
+        <h4>Degree</h4>
+        <p>B.Tech (Hons.) + M.Tech — 5Y Dual Degree</p>
+        <p>IIT Kharagpur, 2022 – 2027</p>
+      </div>
+      <div class="detail-group">
+        <h4>Email</h4>
+        <a href="mailto:prabhashgolla2004@gmail.com">prabhashgolla2004@gmail.com</a>
+        <a href="mailto:prabhashgolla@kgpian.iitkgp.ac.in">prabhashgolla@kgpian.iitkgp.ac.in</a>
+      </div>
+      <div class="detail-group">
+        <h4>Languages Known</h4>
+        <p>English, Hindi, Telugu</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Education</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="edu-timeline">
+    <div class="edu-item reveal">
+      <div class="edu-year">2022 – 2027</div>
+      <div class="edu-degree">B.Tech (Hons.) + M.Tech Dual Degree</div>
+      <div class="edu-inst">Computer Science &amp; Engineering — IIT Kharagpur</div>
+      <span class="edu-score">CGPA: 9.19 / 10</span>
+    </div>
+    <div class="edu-item reveal d1">
+      <div class="edu-year">2022</div>
+      <div class="edu-degree">Board of Intermediate Education, AP</div>
+      <div class="edu-inst">Sasi New Gen Junior College, Velivennu</div>
+      <span class="edu-score">96.8%</span>
+    </div>
+    <div class="edu-item reveal d2">
+      <div class="edu-year">2020</div>
+      <div class="edu-degree">Board of Secondary Education, AP</div>
+      <div class="edu-inst">Sasi English Medium High School, Velivennu</div>
+      <span class="edu-score">98%</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card reveal tilt-card">
+      <div class="project-meta">
+        <span class="project-tag">Systems / DBMS</span>
+        <span class="project-date">Mar – Apr '25</span>
+      </div>
+      <h3 class="project-title">Distributed Data Management System</h3>
+      <ul class="project-bullets">
+        <li>Scalable distributed database with sharding, replication, and consistent hashing for load balancing</li>
+        <li>Python-based (Quart) async load balancer with automatic failure recovery mechanism</li>
+        <li>Containerized via Docker &amp; Docker Compose for multi-server deployment simulation</li>
+        <li>Fault-tolerant recovery by detecting server failures and spawning replicas with restored shard data</li>
+        <li>RESTful CRUD APIs for shard-level operations, range queries, and dynamic reconfiguration</li>
+      </ul>
+      <div class="project-techs">
+        <span class="tech-tag">Python</span><span class="tech-tag">Quart</span><span class="tech-tag">Docker</span><span class="tech-tag">REST API</span><span class="tech-tag">Consistent Hashing</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal d1 tilt-card">
+      <div class="project-meta">
+        <span class="project-tag">Networking</span>
+        <span class="project-date">Feb – Mar '25</span>
+      </div>
+      <h3 class="project-title">Reliable Transport Protocol (KTP)</h3>
+      <ul class="project-bullets">
+        <li>Custom reliable transport protocol (KTP) using C over UDP with adaptive timeout retransmission</li>
+        <li>Multi-threaded architecture using Pthreads and shared memory for concurrent send/receive operations</li>
+        <li>Mutex synchronization to prevent race conditions across multiple connections</li>
+      </ul>
+      <div class="project-techs">
+        <span class="tech-tag">C</span><span class="tech-tag">UDP</span><span class="tech-tag">Pthreads</span><span class="tech-tag">Shared Memory</span><span class="tech-tag">Mutex</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal d2 tilt-card">
+      <div class="project-meta">
+        <span class="project-tag">Computer Architecture</span>
+        <span class="project-date">Oct – Nov '24</span>
+      </div>
+      <h3 class="project-title">32-bit RISC Processor Design</h3>
+      <ul class="project-bullets">
+        <li>Custom 32-bit RISC processor with complete ISA supporting ALU operations and branching</li>
+        <li>Python-based assembler translating MIPS32 instructions into binary codes</li>
+        <li>Validated via FPGA implementation and comprehensive testbench-based verification</li>
+      </ul>
+      <div class="project-techs">
+        <span class="tech-tag">Verilog</span><span class="tech-tag">MIPS32</span><span class="tech-tag">FPGA</span><span class="tech-tag">Python</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal tilt-card">
+      <div class="project-meta">
+        <span class="project-tag">Full Stack</span>
+        <span class="project-date">Mar '24</span>
+      </div>
+      <h3 class="project-title">Movie Streaming Platform</h3>
+      <ul class="project-bullets">
+        <li>Frontend in ReactJS for both user and admin interfaces</li>
+        <li>RESTful API with NodeJS and ExpressJS for efficient database interaction</li>
+        <li>OAuth2, JWT, and RBAC for secure authentication, session management, and access control</li>
+      </ul>
+      <div class="project-techs">
+        <span class="tech-tag">ReactJS</span><span class="tech-tag">NodeJS</span><span class="tech-tag">ExpressJS</span><span class="tech-tag">OAuth2</span><span class="tech-tag">JWT</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal d1 tilt-card">
+      <div class="project-meta">
+        <span class="project-tag">Full Stack / DBMS</span>
+        <span class="project-date">Feb – Mar '25</span>
+      </div>
+      <h3 class="project-title">Gram Panchayat Management System</h3>
+      <ul class="project-bullets">
+        <li>Full-stack web system using Flask and PostgreSQL to manage citizens, assets, and governance data</li>
+        <li>ER schema integrating welfare schemes, census data, education, and vaccinations</li>
+        <li>Role-based access for citizens, employees, admins, and monitors with secure reporting</li>
+      </ul>
+      <div class="project-techs">
+        <span class="tech-tag">Flask</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Python</span><span class="tech-tag">RBAC</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal d2 tilt-card">
+      <div class="project-meta">
+        <span class="project-tag">Hardware / Logic Design</span>
+        <span class="project-date">Apr '24</span>
+      </div>
+      <h3 class="project-title">12-Hour Digital Clock</h3>
+      <ul class="project-bullets">
+        <li>Digital circuit displaying hours and minutes on 7-segment LEDs; seconds via blinking light</li>
+        <li>555-timer-based Astable Multivibrator calibrated to oscillate at a precise 1-second period</li>
+        <li>User-defined timer presets and adjustable clock frequency via custom digital circuit</li>
+        <li>Counter ICs and flip-flops for real-time minute and hour tracking and display output</li>
+      </ul>
+      <div class="project-techs">
+        <span class="tech-tag">555 Timer</span><span class="tech-tag">7-Segment LED</span><span class="tech-tag">Counter ICs</span><span class="tech-tag">Flip-flops</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Skills &amp; Expertise</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-container">
+    <div class="reveal">
+      <div class="skill-group-title">Programming Languages</div>
+      <div class="skill-pills">
+        <span class="skill-pill">C</span><span class="skill-pill">C++</span><span class="skill-pill">Python</span>
+        <span class="skill-pill">SQL</span><span class="skill-pill">Bash</span><span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">HTML / CSS</span><span class="skill-pill">Verilog</span>
+        <span class="skill-pill">MIPS32</span><span class="skill-pill">Assembly</span>
+        <span class="skill-pill">Lex</span><span class="skill-pill">Yacc</span>
+      </div>
+    </div>
+    <div class="reveal d1">
+      <div class="skill-group-title">Frameworks &amp; Tools</div>
+      <div class="skill-pills">
+        <span class="skill-pill">Django</span><span class="skill-pill">Flask</span><span class="skill-pill">React.js</span>
+        <span class="skill-pill">NodeJS</span><span class="skill-pill">Quart</span><span class="skill-pill">Docker</span>
+        <span class="skill-pill">MongoDB</span><span class="skill-pill">PostgreSQL</span><span class="skill-pill">Git</span>
+        <span class="skill-pill">Gawk / Grep</span><span class="skill-pill">Valgrind</span><span class="skill-pill">GDB</span>
+      </div>
+    </div>
+    <div class="reveal d2">
+      <div class="skill-group-title">Core Competencies</div>
+      <div class="skill-pills">
+        <span class="skill-pill">Data Structures</span><span class="skill-pill">Algorithms</span>
+        <span class="skill-pill">OOP Design</span><span class="skill-pill">Systems Programming</span>
+        <span class="skill-pill">Socket Programming</span><span class="skill-pill">Distributed Systems</span>
+        <span class="skill-pill">Machine Learning</span><span class="skill-pill">Deep Learning</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="competitive">
+  <div class="section-header reveal">
+    <span class="section-num">05</span>
+    <h2 class="section-title">Competitive Programming</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="competitive-row reveal">
+    <div class="competitive-card">
+      <div class="competitive-platform">Codeforces</div>
+      <div class="competitive-rating" id="rCF">1892</div>
+      <div class="competitive-label">Expert</div>
+      <div class="competitive-handle">gmmp0312</div>
+    </div>
+    <div class="competitive-card">
+      <div class="competitive-platform">LeetCode</div>
+      <div class="competitive-rating" id="rLC">2263</div>
+      <div class="competitive-label">Guardian</div>
+      <div class="competitive-handle">chinnu0312</div>
+    </div>
+    <div class="competitive-card">
+      <div class="competitive-platform">CodeChef</div>
+      <div class="competitive-rating" id="rCC">1971</div>
+      <div class="competitive-label">4-Star</div>
+      <div class="competitive-handle">chinnu0312</div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="section-header reveal">
+    <span class="section-num">06</span>
+    <h2 class="section-title">Achievements</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="achievements-grid">
+    <div class="achievement-card reveal tilt-card">
+      <span class="achievement-icon">🏆</span>
+      <div class="achievement-text"><strong>AIR 844</strong> in JEE Advanced 2022 — Top 0.5% among 150,000+ candidates</div>
+    </div>
+    <div class="achievement-card reveal d1 tilt-card">
+      <span class="achievement-icon">🎯</span>
+      <div class="achievement-text"><strong>AIR 1833</strong> in JEE Main 2022 (B.Tech) <br> <strong>AIR 4</strong> in JEE Main 2022 (B.Arch) <br> <strong>AIR 26</strong> in JEE Main 2022 (B.Plan)</div>
+    </div>
+    <div class="achievement-card reveal tilt-card">
+      <span class="achievement-icon">📊</span>
+      <div class="achievement-text"><strong>AIR 27</strong> in ISI B.Stat Entrance Examination 2022, Indian Statistical Institute, Kolkata</div>
+    </div>
+    <div class="achievement-card reveal d1 tilt-card">
+      <span class="achievement-icon">📐</span>
+      <div class="achievement-text"><strong>AIR 273</strong> in Andhra Pradesh EAPCET 2022 among 250,000+ applicants</div>
+    </div>
+    <div class="achievement-card reveal d2 tilt-card">
+      <span class="achievement-icon">⚡</span>
+      <div class="achievement-text">
+        <strong>Expert</strong> on Codeforces (1892) <br>
+        <strong>Guardian</strong> on LeetCode (2263) <br>
+        <strong>4-Star</strong> on CodeChef (1971)
+      </div>
+    </div>
+    <div class="achievement-card reveal d1 tilt-card">
+      <span class="achievement-icon">🥈</span>
+      <div class="achievement-text">
+        Silver medals in <strong>Football</strong> (GC 2023),
+        <strong>Yoga</strong> (Open IIT 2023), and
+        <strong>Product Management</strong> (Open IIT 2023) at IIT Kharagpur
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-header reveal">
+    <span class="section-num">07</span>
+    <h2 class="section-title">Leadership &amp; Experience</h2>
+    <div class="section-line"></div>
+  </div>
+  
+  <div class="positions-grid">
+    <div class="position-card reveal tilt-card">
+      <div>
+        <div class="position-role">Tech Head</div>
+        <div class="position-org">KodeinKGP — IIT Kharagpur</div>
+        <ul class="position-bullets">
+          <li>Led a diverse team of 50+ members, overseeing website maintenance and overall tech architecture</li>
+          <li>Promoted technology and framework adoption in web development through informative seminars and workshops</li>
+        </ul>
+      </div>
+      <div class="position-duration">May '24 — May '25</div>
+    </div>
+
+    <div class="position-card reveal d1 tilt-card">
+      <div>
+        <div class="position-role">Web Developer &amp; Tree Census Coordinator</div>
+        <div class="position-org">Technology Environment Society — IIT Kharagpur</div>
+        <ul class="position-bullets">
+          <li>Led web development initiatives to maintain and upgrade the society's digital presence</li>
+          <li>Coordinated the Tree Census project, utilizing strong team building and event management skills</li>
+        </ul>
+      </div>
+      <div class="position-duration">Mar '23 — May '25</div>
+    </div>
+
+    <div class="position-card reveal d2 tilt-card">
+      <div>
+        <div class="position-role">Sub-head</div>
+        <div class="position-org">Shaurya — IIT Kharagpur</div>
+        <ul class="position-bullets">
+          <li>Managed logistics and event operations for Shaurya, ensuring smooth execution of activities</li>
+        </ul>
+      </div>
+      <div class="position-duration">Jul '23 — Jun '24</div>
+    </div>
+  </div>
+</section>
+
+<section id="coursework">
+  <div class="section-header reveal">
+    <span class="section-num">08</span>
+    <h2 class="section-title">Coursework</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="courses-grid">
+    <div class="reveal">
+      <div class="course-group-title">Computer Science</div>
+      <div class="course-pills">
+        <span class="course-pill lab">Programming &amp; Data Structures</span>
+        <span class="course-pill lab">Algorithms I</span>
+        <span class="course-pill">Algorithms II</span>
+        <span class="course-pill lab">Software Engineering</span>
+        <span class="course-pill lab">Computer Org. &amp; Architecture</span>
+        <span class="course-pill lab">Systems Programming</span>
+        <span class="course-pill lab">Compilers</span>
+        <span class="course-pill lab">Operating Systems</span>
+        <span class="course-pill lab">Computer Networks</span>
+        <span class="course-pill lab">Database Management Systems</span>
+        <span class="course-pill">Discrete Structures</span>
+        <span class="course-pill">Machine Learning</span>
+        <span class="course-pill">Deep Learning</span>
+        <span class="course-pill">Formal Languages &amp; Automata</span>
+        <span class="course-pill lab">Switching Circuits &amp; Logic Design</span>
+        <span class="course-pill">Cryptography &amp; Network Security</span>
+        <span class="course-pill">Advances in OS Design</span>
+        <span class="course-pill">High Performance Comp. Architecture</span>
+      </div>
+      <p style="font-size:0.62rem;color:var(--text-muted);margin-top:14px;">
+        <span style="border:1px solid rgba(201,168,76,0.3);padding:2px 8px;color:var(--text-dim);">gold border</span>
+        &nbsp;= includes laboratory component
+      </p>
+    </div>
+    <div class="reveal d2">
+      <div class="course-group-title">Mathematics</div>
+      <div class="course-pills">
+        <span class="course-pill">Advanced Calculus</span>
+        <span class="course-pill">Linear Algebra, Numerical &amp; Complex Analysis</span>
+        <span class="course-pill">Probability &amp; Statistics</span>
+        <span class="course-pill">Transform Calculus</span>
+        <span class="course-pill">Multivariate Statistical Methods</span>
+        <span class="course-pill">Computational Number Theory</span>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-num">09</span>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-inner">
+    <div class="reveal">
+      <h3 class="contact-headline">
+        Let's build<br>something <strong>remarkable</strong><br>together.
+      </h3>
+      <p class="contact-sub">
+        Open to internship opportunities, research collaborations, and interesting engineering challenges.
+        Don't hesitate to reach out — I'm always happy to connect.
+      </p>
+    </div>
+    <div class="contact-links reveal d2">
+      <a href="mailto:prabhashgolla2004@gmail.com" class="contact-link magnetic-btn">
+        <span class="contact-link-icon">✉</span>
+        <div>
+          <div class="contact-link-label">Personal Email</div>
+          <div class="contact-link-value">prabhashgolla2004@gmail.com</div>
+        </div>
+      </a>
+      <a href="mailto:prabhashgolla@kgpian.iitkgp.ac.in" class="contact-link magnetic-btn">
+        <span class="contact-link-icon">✉</span>
+        <div>
+          <div class="contact-link-label">Institute Email</div>
+          <div class="contact-link-value">prabhashgolla@kgpian.iitkgp.ac.in</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/" target="_blank" class="contact-link magnetic-btn">
+        <span class="contact-link-icon">⊞</span>
+        <div>
+          <div class="contact-link-label">LinkedIn</div>
+          <div class="contact-link-value">Golla Meghanandh Manvith Prabhash</div>
+        </div>
+      </a>
+      <a href="https://github.com/prabhash-golla" target="_blank" class="contact-link magnetic-btn">
+        <span class="contact-link-icon">⌥</span>
+        <div>
+          <div class="contact-link-label">GitHub</div>
+          <div class="contact-link-value">prabhash-golla</div>
+        </div>
+      </a>
+      <a href="https://leetcode.com/chinnu0312" target="_blank" class="contact-link magnetic-btn">
+        <span class="contact-link-icon">◈</span>
+        <div>
+          <div class="contact-link-label">LeetCode</div>
+          <div class="contact-link-value">chinnu0312 — Guardian (2,263)</div>
+        </div>
+      </a>
+      <a href="tel:+919818645848" class="contact-link magnetic-btn">
+        <span class="contact-link-icon">☏</span>
+        <div>
+          <div class="contact-link-label">Phone</div>
+          <div class="contact-link-value">+91 98186 45848</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 &nbsp;Golla Meghanandh Manvith Prabhash &nbsp;·&nbsp; IIT Kharagpur</p>
+  <p>
+    <a href="https://github.com/prabhash-golla" target="_blank">GitHub</a>&nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/" target="_blank">LinkedIn</a>&nbsp;·&nbsp;
+    <a href="https://leetcode.com/chinnu0312" target="_blank">LeetCode</a>&nbsp;·&nbsp;
+    <a href="mailto:prabhashgolla2004@gmail.com">Email</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
