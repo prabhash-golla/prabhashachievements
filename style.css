@@ -758,11 +758,11 @@ body.scroll-locked {
   overflow: hidden !important;
 }
 
-/* Fix the 400px blowout issue on cards */
-.projects-grid, .achievements-grid {
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-}
 @media (max-width: 900px) {
+  /* Fix the 400px blowout issue on cards */
+  .projects-grid, .achievements-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
   /* Hide the middle name */
   .hl {
     display: none;
