@@ -9,7 +9,20 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<body>
 
+<div id="loader">
+  <div class="loader-content">
+    <div class="loader-spinner"></div>
+    <h1 class="loader-name">Prabhash <span class="loader-slash">/</span> Golla</h1>
+    <div class="loader-status">
+      <span>LOADING ASSETS</span>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+</div>
+
+<canvas id="network-canvas"></canvas>
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="mouse-spotlight" id="mouseSpotlight"></div>
@@ -31,7 +44,6 @@
     <li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="mailto:prabhashgolla2004@gmail.com" class="nav-cta magnetic-btn">Get In Touch</a>
 </nav>
 
 <section id="hero">
@@ -449,63 +461,44 @@
 </section>
 
 <section id="contact">
+  <div class="contact-glow"></div>
+  
   <div class="section-header reveal">
     <span class="section-num">09</span>
     <h2 class="section-title">Contact</h2>
     <div class="section-line"></div>
   </div>
-  <div class="contact-inner">
-    <div class="reveal">
+  
+  <div class="contact-glass-card reveal">
+    <div class="contact-content">
       <h3 class="contact-headline">
-        Let's build<br>something <strong>remarkable</strong><br>together.
+        Let's build<br>something <span class="text-gradient">remarkable</span><br>together.
       </h3>
       <p class="contact-sub">
-        Open to internship opportunities, research collaborations, and interesting engineering challenges.
-        Don't hesitate to reach out — I'm always happy to connect.
+        Open to internship opportunities, research collaborations, and interesting engineering challenges. My inbox is always open — don't hesitate to reach out.
       </p>
     </div>
-    <div class="contact-links reveal d2">
-      <a href="mailto:prabhashgolla2004@gmail.com" class="contact-link magnetic-btn">
-        <span class="contact-link-icon">✉</span>
-        <div>
-          <div class="contact-link-label">Personal Email</div>
-          <div class="contact-link-value">prabhashgolla2004@gmail.com</div>
-        </div>
+    
+    <div class="contact-grid">
+      <a href="mailto:prabhashgolla2004@gmail.com" class="contact-box magnetic-btn">
+        <div class="box-icon">✉</div>
+        <div class="box-label">Personal Email</div>
       </a>
-      <a href="mailto:prabhashgolla@kgpian.iitkgp.ac.in" class="contact-link magnetic-btn">
-        <span class="contact-link-icon">✉</span>
-        <div>
-          <div class="contact-link-label">Institute Email</div>
-          <div class="contact-link-value">prabhashgolla@kgpian.iitkgp.ac.in</div>
-        </div>
+      <a href="mailto:prabhashgolla@kgpian.iitkgp.ac.in" class="contact-box magnetic-btn">
+        <div class="box-icon">🎓</div>
+        <div class="box-label">Institute Email</div>
       </a>
-      <a href="https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/" target="_blank" class="contact-link magnetic-btn">
-        <span class="contact-link-icon">⊞</span>
-        <div>
-          <div class="contact-link-label">LinkedIn</div>
-          <div class="contact-link-value">Golla Meghanandh Manvith Prabhash</div>
-        </div>
+      <a href="https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/" target="_blank" class="contact-box magnetic-btn">
+        <div class="box-icon">⊞</div>
+        <div class="box-label">LinkedIn</div>
       </a>
-      <a href="https://github.com/prabhash-golla" target="_blank" class="contact-link magnetic-btn">
-        <span class="contact-link-icon">⌥</span>
-        <div>
-          <div class="contact-link-label">GitHub</div>
-          <div class="contact-link-value">prabhash-golla</div>
-        </div>
+      <a href="https://github.com/prabhash-golla" target="_blank" class="contact-box magnetic-btn">
+        <div class="box-icon">⌥</div>
+        <div class="box-label">GitHub</div>
       </a>
-      <a href="https://leetcode.com/chinnu0312" target="_blank" class="contact-link magnetic-btn">
-        <span class="contact-link-icon">◈</span>
-        <div>
-          <div class="contact-link-label">LeetCode</div>
-          <div class="contact-link-value">chinnu0312 — Guardian (2,263)</div>
-        </div>
-      </a>
-      <a href="tel:+919818645848" class="contact-link magnetic-btn">
-        <span class="contact-link-icon">☏</span>
-        <div>
-          <div class="contact-link-label">Phone</div>
-          <div class="contact-link-value">+91 98186 45848</div>
-        </div>
+      <a href="https://leetcode.com/chinnu0312" target="_blank" class="contact-box magnetic-btn">
+        <div class="box-icon">◈</div>
+        <div class="box-label">LeetCode</div>
       </a>
     </div>
   </div>
