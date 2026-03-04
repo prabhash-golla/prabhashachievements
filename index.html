@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Prabhash Golla | Computer Science Engineer | IIT Kharagpur</title>
+  <title>Prabhash Golla</title>
   
   <meta name="description" content="Portfolio of Golla Meghanandh Manvith Prabhash, a Dual Degree Computer Science & Engineering student at IIT Kharagpur specializing in distributed systems and deep learning.">
   
@@ -16,6 +16,7 @@
   <meta property="og:url" content="https://cse.iitkgp.ac.in/~gollammp/">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -596,6 +597,54 @@ body.scroll-locked { overflow: hidden !important; }
   .tilt-card { transform: none !important; transition: none !important; }
   .magnetic-btn { transform: none !important; }
 }
+/* Target the new icons */
+.achievement-icon {
+  font-size: 2.2rem; /* Adjust size as needed */
+  color: #eab308; /* A sophisticated gold/yellow. Change this hex to perfectly match your site's accent color */
+  margin-bottom: 1rem;
+  display: inline-block;
+  
+  /* Adds a subtle high-tech glow */
+  text-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+  
+  /* Smooth transition for hover effects */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Optional: Make the icon pop when you hover over the card */
+.achievement-card:hover .achievement-icon {
+  transform: scale(1.1);
+  text-shadow: 0 0 25px rgba(234, 179, 8, 0.8);
+}
+
+/* Specific styling for the silver medal to differentiate it from the gold ones */
+.achievement-card .fa-medal {
+  color: #9ca3af; /* Silver color */
+  text-shadow: 0 0 15px rgba(156, 163, 175, 0.4);
+}
+.achievement-card:hover .fa-medal {
+  text-shadow: 0 0 25px rgba(156, 163, 175, 0.8);
+}
+
+.achievement-card {
+  background: rgba(18, 18, 24, 0.6); /* Assuming you have a dark semi-transparent bg */
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Very faint white/gray border */
+  border-radius: 12px; /* Smooth rounded corners */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Make the border glow gold when you hover over the card */
+.achievement-card:hover {
+  border-color: rgba(234, 179, 8, 0.3); /* Faint gold border on hover */
+  transform: translateY(-5px); /* Gives it a nice lift */
+}
+.achievement-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the icon and text horizontally */
+  text-align: center;  /* Centers the text lines */
+  padding: 2rem;       /* Ensure you have good breathing room inside the card */
+}
 </style>
 </head>
 <body>
@@ -913,31 +962,36 @@ body.scroll-locked { overflow: hidden !important; }
   </div>
   <div class="achievements-grid">
     <div class="achievement-card reveal tilt-card">
-      <span class="achievement-icon">🏆</span>
+      <span class="achievement-icon"><i class="fa-solid fa-trophy"></i></span>
       <div class="achievement-text"><strong>AIR 844</strong> in JEE Advanced 2022 — Top 0.5% among 150,000+ candidates</div>
     </div>
+    
     <div class="achievement-card reveal d1 tilt-card">
-      <span class="achievement-icon">🎯</span>
+      <span class="achievement-icon"><i class="fa-solid fa-bullseye"></i></span>
       <div class="achievement-text"><strong>AIR 1833</strong> in JEE Main 2022 (B.Tech) <br> <strong>AIR 4</strong> in JEE Main 2022 (B.Arch) <br> <strong>AIR 26</strong> in JEE Main 2022 (B.Plan)</div>
     </div>
+    
     <div class="achievement-card reveal tilt-card">
-      <span class="achievement-icon">📊</span>
+      <span class="achievement-icon"><i class="fa-solid fa-chart-line"></i></span>
       <div class="achievement-text"><strong>AIR 27</strong> in ISI B.Stat Entrance Examination 2022, Indian Statistical Institute, Kolkata</div>
     </div>
+    
     <div class="achievement-card reveal d1 tilt-card">
-      <span class="achievement-icon">📐</span>
+      <span class="achievement-icon"><i class="fa-solid fa-ruler-combined"></i></span>
       <div class="achievement-text">Secured <strong>State Rank 273</strong> (Top 0.1%) in AP EAPCET 2022 among 250,000+ applicants</div>
     </div>
+    
     <div class="achievement-card reveal d2 tilt-card">
-      <span class="achievement-icon">⚡</span>
+      <span class="achievement-icon"><i class="fa-solid fa-bolt"></i></span>
       <div class="achievement-text">
         <strong>Expert</strong> on Codeforces (1892) <br>
         <strong>Guardian</strong> on LeetCode (2263) <br>
         <strong>4-Star</strong> on CodeChef (1971)
       </div>
     </div>
+    
     <div class="achievement-card reveal d1 tilt-card">
-      <span class="achievement-icon">🥈</span>
+      <span class="achievement-icon"><i class="fa-solid fa-medal"></i></span>
       <div class="achievement-text">
         Silver medals in <strong>Football</strong> (GC 2023),
         <strong>Yoga</strong> (Open IIT 2023), and
@@ -1059,23 +1113,27 @@ body.scroll-locked { overflow: hidden !important; }
 
     <div class="contact-grid">
       <a href="mailto:prabhashgolla2004@gmail.com" class="contact-box magnetic-btn">
-        <div class="box-icon">✉</div>
+        <div class="box-icon"><i class="fas fa-envelope"></i></div>
         <div class="box-label">Email</div>
       </a>
+
       <a href="https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/" target="_blank" class="contact-box magnetic-btn">
-        <div class="box-icon">⊞</div>
+        <div class="box-icon"><i class="fab fa-linkedin"></i></div>
         <div class="box-label">LinkedIn</div>
       </a>
+
       <a href="https://github.com/prabhash-golla" target="_blank" class="contact-box magnetic-btn">
-        <div class="box-icon">⌥</div>
+        <div class="box-icon"><i class="fab fa-github"></i></div>
         <div class="box-label">GitHub</div>
       </a>
+
       <a href="https://leetcode.com/chinnu0312" target="_blank" class="contact-box magnetic-btn">
-        <div class="box-icon">◈</div>
+        <div class="box-icon"><img src="https://cdn.simpleicons.org/leetcode/c9a84c" width="24" /></div>
         <div class="box-label">LeetCode</div>
       </a>
+
       <a href="https://codeforces.com/profile/gmmp0312" target="_blank" class="contact-box magnetic-btn">
-        <div class="box-icon">⟨/⟩</div>
+        <div class="box-icon"><img src="https://cdn.simpleicons.org/codeforces/c9a84c" width="24" /></div>
         <div class="box-label">Codeforces</div>
       </a>
     </div>
