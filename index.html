@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -676,8 +675,8 @@ body.scroll-locked { overflow: hidden !important; }
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#competitive">CP</a></li>
+    <!-- <li><a href="#skills">Skills</a></li> -->
+    <!-- <li><a href="#competitive">CP</a></li> -->
     <li><a href="#achievements">Achievements</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -696,11 +695,11 @@ body.scroll-locked { overflow: hidden !important; }
   </h2>
   <p class="hero-desc">
     Building distributed systems, deep learning models, and full-stack applications.
-    Expert-rated competitive programmer — <strong>Codeforces 1892</strong> and
-    <strong>LeetCode Guardian (2263)</strong>.
+    <!-- Expert-rated competitive programmer — <strong>Codeforces 1892</strong> and
+    <strong>LeetCode Guardian (2263)</strong>. -->
   </p>
   <div class="hero-actions">
-    <a href="https://github.com/prabhash-golla" target="_blank" class="btn-primary magnetic-btn"><span>↗ GitHub</span></a>
+    <!-- <a href="https://github.com/prabhash-golla" target="_blank" class="btn-primary magnetic-btn"><span>↗ GitHub</span></a> -->
     <a href="https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/" target="_blank" class="btn-ghost magnetic-btn">LinkedIn</a>
     <a href="#projects" class="btn-ghost magnetic-btn">View Projects</a>
   </div>
@@ -725,14 +724,14 @@ body.scroll-locked { overflow: hidden !important; }
       </p>
       <p>
         Outside academics, I am an <strong>Expert on Codeforces</strong> and <strong>Guardian on LeetCode</strong>,
-        Tech Head at KodeinKGP — IIT Kharagpur's largest coding community — and a silver medalist in
-        IIT Kharagpur's General Championship across football, yoga, and product management.
+        Tech Head at KodeinKGP and a medalist in
+        IIT Kharagpur's General Championship across maths olympiad, open soft, football, yoga, and product management.
       </p>
-      <div class="social-links">
+      <!-- <div class="social-links">
         <a href="https://github.com/prabhash-golla" target="_blank" class="social-link magnetic-btn">⌥ GitHub</a>
         <a href="https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/" target="_blank" class="social-link magnetic-btn">⊞ LinkedIn</a>
         <a href="https://leetcode.com/chinnu0312" target="_blank" class="social-link magnetic-btn">◈ LeetCode</a>
-      </div>
+      </div> -->
     </div>
     <div class="about-details reveal d2">
       <div class="detail-group">
@@ -768,19 +767,19 @@ body.scroll-locked { overflow: hidden !important; }
       <div class="edu-year">2022 – 2027</div>
       <div class="edu-degree">B.Tech (Hons.) + M.Tech Dual Degree</div>
       <div class="edu-inst">Computer Science &amp; Engineering — IIT Kharagpur</div>
-      <span class="edu-score">CGPA: 9.19 / 10</span>
+      <!-- <span class="edu-score">CGPA: 9.19 / 10</span> -->
     </div>
     <div class="edu-item reveal d1">
       <div class="edu-year">2022</div>
       <div class="edu-degree">Board of Intermediate Education, AP</div>
       <div class="edu-inst">Sasi New Gen Junior College, Velivennu</div>
-      <span class="edu-score">96.8%</span>
+      <!-- <span class="edu-score">96.8%</span> -->
     </div>
     <div class="edu-item reveal d2">
       <div class="edu-year">2020</div>
       <div class="edu-degree">Board of Secondary Education, AP</div>
       <div class="edu-inst">Sasi English Medium High School, Velivennu</div>
-      <span class="edu-score">98%</span>
+      <!-- <span class="edu-score">98%</span> -->
     </div>
   </div>
 </section>
@@ -794,10 +793,28 @@ body.scroll-locked { overflow: hidden !important; }
   <div class="projects-grid">
     <div class="project-card reveal tilt-card">
       <div class="project-meta">
+        <span class="project-tag">HFT / High Performance</span>
+        <span class="project-date">IIT KGP Open Soft 2026</span>
+      </div>
+      <h3 class="project-title">Project Synthetic-Bull</h3>
+      <p class="achievement-text" style="margin-bottom: 12px; font-size: 0.85rem; color: var(--gold);">Full-stack simulation stack operating on High-Frequency Trading (HFT) principles for real-time stock/crypto exchange emulation.</p>
+      <ul class="project-bullets">
+        <li>Implemented a Zero-Allocation strategy on the Go hot-path with Arena-based memory management and Intrusive Red-Black Trees for the Limit Order Book (LOB).</li>
+        <li>Single-writer deterministic matching engine achieving <strong>&lt;1μs latency</strong>; utilized an event-driven SPMC Ring Buffer for non-blocking data dissemination.</li>
+        <li>Developed Market Maker and Alpha bots leveraging statistical approaches including OBI (Order Book Imbalance) and EMA crossover strategies.</li>
+        <li>Guaranteed system state integrity via Write-Ahead Logging (WAL) for deterministic replay and recovery.</li>
+      </ul>
+      <div class="project-techs">
+        <span class="tech-tag">Go</span><span class="tech-tag">React</span><span class="tech-tag">Zustand</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">WebSockets</span><span class="tech-tag">Vite</span>
+      </div>
+    </div>
+    <div class="project-card reveal tilt-card">
+      <div class="project-meta">
         <span class="project-tag">Systems / DBMS</span>
         <span class="project-date">Mar – Apr '25</span>
       </div>
       <h3 class="project-title">Distributed Data Management System</h3>
+      <p class="achievement-text" style="margin-bottom: 12px; font-size: 0.85rem; color: var(--gold);">High-availability distributed database engine featuring dynamic sharding, consistent hashing, and automated fault-recovery mechanisms.</p>
       <ul class="project-bullets">
         <li>Scalable distributed database with sharding, replication, and consistent hashing for load balancing</li>
         <li>Python-based (Quart) async load balancer with automatic failure recovery mechanism</li>
@@ -815,6 +832,7 @@ body.scroll-locked { overflow: hidden !important; }
         <span class="project-date">Feb – Mar '25</span>
       </div>
       <h3 class="project-title">Reliable Transport Protocol (KTP)</h3>
+      <p class="achievement-text" style="margin-bottom: 12px; font-size: 0.85rem; color: var(--gold);">Custom L4 transport protocol implemented over UDP featuring sliding-window flow control and concurrent multi-threaded execution.</p>
       <ul class="project-bullets">
         <li>Custom reliable transport protocol (KTP) using C over UDP with adaptive timeout retransmission</li>
         <li>Multi-threaded architecture using Pthreads and shared memory for concurrent send/receive operations</li>
@@ -830,6 +848,7 @@ body.scroll-locked { overflow: hidden !important; }
         <span class="project-date">Oct – Nov '24</span>
       </div>
       <h3 class="project-title">32-bit RISC Processor Design</h3>
+      <p class="achievement-text" style="margin-bottom: 12px; font-size: 0.85rem; color: var(--gold);">Complete hardware-level implementation of a MIPS-inspired RISC architecture with a custom ISA and automated assembler.</p>
       <ul class="project-bullets">
         <li>Custom 32-bit RISC processor with complete ISA supporting ALU operations and branching</li>
         <li>Python-based assembler translating MIPS32 instructions into binary codes</li>
@@ -839,12 +858,13 @@ body.scroll-locked { overflow: hidden !important; }
         <span class="tech-tag">Verilog</span><span class="tech-tag">MIPS32</span><span class="tech-tag">FPGA</span><span class="tech-tag">Python</span>
       </div>
     </div>
-    <div class="project-card reveal tilt-card">
+    <!-- <div class="project-card reveal tilt-card">
       <div class="project-meta">
         <span class="project-tag">Full Stack</span>
         <span class="project-date">Mar '24</span>
       </div>
       <h3 class="project-title">Movie Streaming Platform</h3>
+      <p class="achievement-text" style="margin-bottom: 12px; font-size: 0.85rem; color: var(--gold);">Scalable full-stack VOD platform utilizing RBAC security models and optimized JWT-based session management.</p>
       <ul class="project-bullets">
         <li>Frontend in ReactJS for both user and admin interfaces</li>
         <li>RESTful API with NodeJS and ExpressJS for efficient database interaction</li>
@@ -853,13 +873,14 @@ body.scroll-locked { overflow: hidden !important; }
       <div class="project-techs">
         <span class="tech-tag">ReactJS</span><span class="tech-tag">NodeJS</span><span class="tech-tag">ExpressJS</span><span class="tech-tag">OAuth2</span><span class="tech-tag">JWT</span>
       </div>
-    </div>
+    </div> -->
     <div class="project-card reveal d1 tilt-card">
       <div class="project-meta">
         <span class="project-tag">Full Stack / DBMS</span>
         <span class="project-date">Feb – Mar '25</span>
       </div>
       <h3 class="project-title">Gram Panchayat Management System</h3>
+      <p class="achievement-text" style="margin-bottom: 12px; font-size: 0.85rem; color: var(--gold);">Enterprise governance platform built on relational ER modeling for secure digital administration of citizen and asset data.</p>
       <ul class="project-bullets">
         <li>Full-stack web system using Flask and PostgreSQL to manage citizens, assets, and governance data</li>
         <li>ER schema integrating welfare schemes, census data, education, and vaccinations</li>
@@ -875,6 +896,7 @@ body.scroll-locked { overflow: hidden !important; }
         <span class="project-date">Apr '24</span>
       </div>
       <h3 class="project-title">12-Hour Digital Clock</h3>
+      <p class="achievement-text" style="margin-bottom: 12px; font-size: 0.85rem; color: var(--gold);">Precision hardware circuit utilizing discrete IC components and calibrated 555-timer oscillators for real-time temporal tracking.</p>
       <ul class="project-bullets">
         <li>Digital circuit displaying hours and minutes on 7-segment LEDs; seconds via blinking light</li>
         <li>555-timer-based Astable Multivibrator calibrated to oscillate at a precise 1-second period</li>
@@ -888,114 +910,36 @@ body.scroll-locked { overflow: hidden !important; }
   </div>
 </section>
 
-<section id="skills">
-  <div class="section-header reveal">
-    <span class="section-num">04</span>
-    <h2 class="section-title">Skills &amp; Expertise</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="skills-container">
-    <div class="reveal">
-      <div class="skill-group-title">Programming Languages</div>
-      <div class="skill-pills">
-        <span class="skill-pill">C</span><span class="skill-pill">C++</span><span class="skill-pill">Python</span>
-        <span class="skill-pill">SQL</span><span class="skill-pill">Bash</span><span class="skill-pill">JavaScript</span>
-        <span class="skill-pill">HTML / CSS</span><span class="skill-pill">Verilog</span>
-        <span class="skill-pill">MIPS32</span><span class="skill-pill">Assembly</span>
-        <span class="skill-pill">Lex</span><span class="skill-pill">Yacc</span>
-      </div>
-    </div>
-    <div class="reveal d1">
-      <div class="skill-group-title">Frameworks &amp; Tools</div>
-      <div class="skill-pills">
-        <span class="skill-pill">Django</span><span class="skill-pill">Flask</span><span class="skill-pill">React.js</span>
-        <span class="skill-pill">NodeJS</span><span class="skill-pill">Quart</span><span class="skill-pill">Docker</span>
-        <span class="skill-pill">MongoDB</span><span class="skill-pill">PostgreSQL</span><span class="skill-pill">Git</span>
-        <span class="skill-pill">Gawk / Grep</span><span class="skill-pill">Valgrind</span><span class="skill-pill">GDB</span>
-      </div>
-    </div>
-    <div class="reveal d2">
-      <div class="skill-group-title">Core Competencies</div>
-      <div class="skill-pills">
-        <span class="skill-pill">Data Structures</span><span class="skill-pill">Algorithms</span>
-        <span class="skill-pill">OOP Design</span><span class="skill-pill">Systems Programming</span>
-        <span class="skill-pill">Socket Programming</span><span class="skill-pill">Distributed Systems</span>
-        <span class="skill-pill">Machine Learning</span><span class="skill-pill">Deep Learning</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="competitive">
-  <div class="section-header reveal">
-    <span class="section-num">05</span>
-    <h2 class="section-title">Competitive Programming</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="competitive-row reveal">
-    <div class="competitive-card">
-      <div class="competitive-platform">Codeforces</div>
-      <div class="competitive-rating" id="rCF">1892</div>
-      <div class="competitive-label">Expert</div>
-      <div class="competitive-handle">gmmp0312</div>
-    </div>
-    <div class="competitive-card">
-      <div class="competitive-platform">LeetCode</div>
-      <div class="competitive-rating" id="rLC">2263</div>
-      <div class="competitive-label">Guardian</div>
-      <div class="competitive-handle">chinnu0312</div>
-    </div>
-    <div class="competitive-card">
-      <div class="competitive-platform">CodeChef</div>
-      <div class="competitive-rating" id="rCC">1971</div>
-      <div class="competitive-label">4-Star</div>
-      <div class="competitive-handle">chinnu0312</div>
-    </div>
-  </div>
-</section>
-
 <section id="achievements">
   <div class="section-header reveal">
-    <span class="section-num">06</span>
+    <span class="section-num">04</span>
     <h2 class="section-title">Achievements</h2>
     <div class="section-line"></div>
   </div>
   <div class="achievements-grid">
+    <!-- MAJOR COMPETITIONS -->
     <div class="achievement-card reveal tilt-card">
       <span class="achievement-icon"><i class="fa-solid fa-trophy"></i></span>
-      <div class="achievement-text"><strong>AIR 844</strong> in JEE Advanced 2022 — Top 0.5% among 150,000+ candidates</div>
-    </div>
-    
-    <div class="achievement-card reveal d1 tilt-card">
-      <span class="achievement-icon"><i class="fa-solid fa-bullseye"></i></span>
-      <div class="achievement-text"><strong>AIR 1833</strong> in JEE Main 2022 (B.Tech) <br> <strong>AIR 4</strong> in JEE Main 2022 (B.Arch) <br> <strong>AIR 26</strong> in JEE Main 2022 (B.Plan)</div>
-    </div>
-    
-    <div class="achievement-card reveal tilt-card">
-      <span class="achievement-icon"><i class="fa-solid fa-chart-line"></i></span>
-      <div class="achievement-text"><strong>AIR 27</strong> in ISI B.Stat Entrance Examination 2022, Indian Statistical Institute, Kolkata</div>
-    </div>
-    
-    <div class="achievement-card reveal d1 tilt-card">
-      <span class="achievement-icon"><i class="fa-solid fa-ruler-combined"></i></span>
-      <div class="achievement-text">Secured <strong>State Rank 273</strong> (Top 0.1%) in AP EAPCET 2022 among 250,000+ applicants</div>
-    </div>
-    
-    <div class="achievement-card reveal d2 tilt-card">
-      <span class="achievement-icon"><i class="fa-solid fa-bolt"></i></span>
       <div class="achievement-text">
-        <strong>Expert</strong> on Codeforces (1892) <br>
-        <strong>Guardian</strong> on LeetCode (2263) <br>
-        <strong>4-Star</strong> on CodeChef (1971)
+        <strong>Gold Medal (Captain)</strong><br>
+        GC Maths Olympiad 2026, IIT Kharagpur
       </div>
     </div>
-    
+
     <div class="achievement-card reveal d1 tilt-card">
+      <span class="achievement-icon"><i class="fa-solid fa-code"></i></span>
+      <div class="achievement-text">
+        <strong>Gold Medal (Captain)</strong><br>
+        GC Open Soft 2026, IIT Kharagpur
+      </div>
+    </div> 
+
+    <!-- SPORTS & EXTRA -->
+    <div class="achievement-card reveal tilt-card">
       <span class="achievement-icon"><i class="fa-solid fa-medal"></i></span>
       <div class="achievement-text">
-        Silver medals in <strong>Football</strong> (GC 2023),
-        <strong>Yoga</strong> (Open IIT 2023), and
-        <strong>Product Management</strong> (Open IIT 2023) at IIT Kharagpur
+        <strong>Multi-Disciplinary Silver</strong><br>
+        Football (GC '23), Yoga ('23), Product Management ('23)
       </div>
     </div>
   </div>
@@ -1003,7 +947,7 @@ body.scroll-locked { overflow: hidden !important; }
 
 <section id="experience">
   <div class="section-header reveal">
-    <span class="section-num">07</span>
+    <span class="section-num">05</span>
     <h2 class="section-title">Leadership &amp; Experience</h2>
     <div class="section-line"></div>
   </div>
@@ -1043,60 +987,11 @@ body.scroll-locked { overflow: hidden !important; }
   </div>
 </section>
 
-<section id="coursework">
-  <div class="section-header reveal">
-    <span class="section-num">08</span>
-    <h2 class="section-title">Coursework</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="courses-grid">
-    <div class="reveal">
-      <div class="course-group-title">Computer Science</div>
-      <div class="course-pills">
-        <span class="course-pill lab">Programming &amp; Data Structures</span>
-        <span class="course-pill lab">Algorithms I</span>
-        <span class="course-pill">Algorithms II</span>
-        <span class="course-pill lab">Software Engineering</span>
-        <span class="course-pill lab">Computer Org. &amp; Architecture</span>
-        <span class="course-pill lab">Systems Programming</span>
-        <span class="course-pill lab">Compilers</span>
-        <span class="course-pill lab">Operating Systems</span>
-        <span class="course-pill lab">Computer Networks</span>
-        <span class="course-pill lab">Database Management Systems</span>
-        <span class="course-pill">Discrete Structures</span>
-        <span class="course-pill">Machine Learning</span>
-        <span class="course-pill">Deep Learning</span>
-        <span class="course-pill">Formal Languages &amp; Automata</span>
-        <span class="course-pill lab">Switching Circuits &amp; Logic Design</span>
-        <span class="course-pill">Cryptography &amp; Network Security</span>
-        <span class="course-pill">Advances in OS Design</span>
-        <span class="course-pill">High Performance Comp. Architecture</span>
-      </div>
-      <p style="font-size:0.62rem;color:var(--text-muted);margin-top:14px;">
-        <span style="border:1px solid rgba(201,168,76,0.3);padding:2px 8px;color:var(--text-dim);">gold border</span>
-        &nbsp;= includes laboratory component
-      </p>
-    </div>
-    <div class="reveal d2">
-      <div class="course-group-title">Mathematics</div>
-      <div class="course-pills">
-        <span class="course-pill">Advanced Calculus</span>
-        <span class="course-pill">Linear Algebra, Numerical &amp; Complex Analysis</span>
-        <span class="course-pill">Probability &amp; Statistics</span>
-        <span class="course-pill">Transform Calculus</span>
-        <span class="course-pill">Multivariate Statistical Methods</span>
-        <span class="course-pill">Computational Number Theory</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT — FULL PAGE REDESIGN -->
 <section id="contact">
   <div class="contact-glow"></div>
 
   <div class="section-header reveal" style="width:100%;">
-    <span class="section-num">09</span>
+    <span class="section-num">06</span>
     <h2 class="section-title">Contact</h2>
     <div class="section-line"></div>
   </div>
